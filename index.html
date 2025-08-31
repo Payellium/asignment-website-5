@@ -10,13 +10,13 @@
 </head>
 <body class=" mx-auto">
     <header>
-        <nav class="flex items-center justify-between mx-10">
+        <nav class="flex flex-col md:flex-row items-center justify-between mx-10">
             <div class="flex items-center">
                 <img class="w-[50px] h-[50px]" src="./assets/logo.png" alt="">
                 <h1 class="text-[#006747] font-extrabold text-2xl ml-3">Emergency <br>Services</h1>
             </div>
             <div class="flex">
-                <h3 class="flex items-center justify-center gap-2 w-[130px] h-[50px] rounded-3xl bg-[#41ff6b1a]"><span class="font-bold">0</span><img class="w-[30px] h-[30px]" src="./assets/heart.png" alt=""></h3>
+                <h3 class="flex items-center justify-center gap-2 w-[130px] h-[50px] rounded-3xl bg-[#41ff6b1a]"><span class="font-bold" id="heart-count">0</span><img class="w-[30px] h-[30px]" src="./assets/heart.png" alt=""></h3>
                 <h3 class="flex items-center justify-center gap-2 w-[130px] h-[50px] text-center rounded-3xl bg-[#41ff6b1a]"><span class="font-bold">100</span><img class="w-6 h-6" src="./assets/coin.png" alt=""></h3>
                 <h3 class="w-[130px] h-[50px] bg-[#00A63E] text-white font-semibold text-xl  text-center p-3 rounded-3xl">2 Copy</h3>
             </div>
@@ -27,14 +27,14 @@
             <p class="text-white text-center">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
         </section>
     </header>
-    <div class="flex mt-5 bg-[#41ff6b1a] gap-5">
-        <section class="card-container w-3/4 grid grid-cols-3 gap-5">
+    <div class="flex flex-col md:flex-row mt-5 bg-[#41ff6b1a] gap-5">
+        <section class="card-container w-3/4 grid grid-cols-1 md:grid-cols-3 gap-5 mx-10">
             <div class="card border-2 border-gray-200 p-4 bg-white">
                 <div class="flex justify-between items-center mt-4">
                     <div class="h-[60px] w-[60px] bg-[#FFE3E2] p-3 rounded-2xl">
                         <img src="./assets/emergency.png" alt="">
                     </div>
-                    <i class="fa-regular fa-heart h-6 w-6"></i>
+                    <i id="heart-icon-1" class="fa-regular fa-heart h-6 w-6 heart-icon"></i>
                 </div>
                 <div class="mt-4">
                     <h1 class="font-bold">National Emergency Number</h1>
@@ -54,7 +54,7 @@
                     <div class="h-[60px] w-[60px] bg-[#DFEFFF] p-3 rounded-2xl">
                         <img src="./assets/police.png" alt="">
                     </div>
-                    <i class="fa-regular fa-heart h-6 w-6"></i>
+                    <i id="heart-icon-2" class="fa-regular fa-heart h-6 w-6"></i>
                 </div>
                 <div class="mt-4">
                     <h1 class="font-bold">Police Helpline Number </h1>
@@ -74,7 +74,7 @@
                     <div class="h-[60px] w-[60px] bg-[#FFE3E2] p-3 rounded-2xl">
                         <img src="./assets/fire-service.png" alt="">
                     </div>
-                    <i class="fa-regular fa-heart h-6 w-6"></i>
+                    <i id="heart-icon-3" class="fa-regular fa-heart h-6 w-6 "></i>
                 </div>
                 <div class="mt-4">
                     <h1 class="font-bold">Fire Service Number</h1>
@@ -94,7 +94,7 @@
                     <div class="h-[60px] w-[60px] bg-[#FFE3E2] p-3 rounded-2xl">
                         <img src="./assets/ambulance.png" alt="">
                     </div>
-                    <i class="fa-regular fa-heart h-6 w-6"></i>
+                    <i id="heart-icon-4" class="fa-regular fa-heart h-6 w-6 "></i>
                 </div>
                 <div class="mt-4">
                     <h1 class="font-bold">Ambulance Service</h1>
@@ -114,7 +114,7 @@
                     <div class="h-[60px] w-[60px] bg-[#FFE3E2] p-3 rounded-2xl">
                         <img src="./assets/emergency.png" alt="">
                     </div>
-                    <i class="fa-regular fa-heart h-6 w-6"></i>
+                    <i id="heart-icon-5" class="fa-regular fa-heart h-6 w-6 "></i>
                 </div>
                 <div class="mt-4">
                     <h1 class="font-bold">Women & Child Helpline</h1>
@@ -134,7 +134,7 @@
                     <div class="h-[60px] w-[60px] bg-[#FFE3E2] p-3 rounded-2xl">
                         <img src="./assets/emergency.png" alt="">
                     </div>
-                    <i class="fa-regular fa-heart h-6 w-6"></i>
+                    <i id="heart-icon-6" class="fa-regular fa-heart h-6 w-6 "></i>
                 </div>
                 <div class="mt-4">
                     <h1 class="font-bold">Anti-Corruption Helpline</h1>
@@ -154,7 +154,7 @@
                     <div class="h-[60px] w-[60px] bg-[#FFE3E2] p-3 rounded-2xl">
                         <img src="./assets/emergency.png" alt="">
                     </div>
-                    <i class="fa-regular fa-heart h-6 w-6"></i>
+                    <i id="heart-icon-7" class="fa-regular fa-heart h-6 w-6 "></i>
                 </div>
                 <div class="mt-4">
                     <h1 class="font-bold">Electricity Helpline</h1>
@@ -172,9 +172,9 @@
             <div class="card border-2 border-gray-200 p-4 bg-white">
                 <div class="flex justify-between items-center mt-4">
                     <div class="h-[60px] w-[60px] bg-[#FFE3E2] p-3 rounded-2xl">
-                        <img src="./assets/emergency.png" alt="">
+                        <img src="./assets/brac.png" alt="">
                     </div>
-                    <i class="fa-regular fa-heart h-6 w-6"></i>
+                    <i id="heart-icon-8" class="fa-regular fa-heart h-6 w-6 "></i>
                 </div>
                 <div class="mt-4">
                     <h1 class="font-bold">Brac Helpline</h1>
@@ -192,9 +192,9 @@
             <div class="card border-2 border-gray-200 p-4 bg-white">
                 <div class="flex justify-between items-center mt-4">
                     <div class="h-[60px] w-[60px] bg-[#FFE3E2] p-3 rounded-2xl">
-                        <img src="./assets/emergency.png" alt="">
+                        <img src="./assets/Bangladesh-Railway.png" alt="">
                     </div>
-                    <i class="fa-regular fa-heart h-6 w-6"></i>
+                    <i id="heart-icon-9" class="fa-regular fa-heart h-6 w-6 "></i>
                 </div>
                 <div class="mt-4">
                     <h1 class="font-bold">Bangladesh Railway Helpline </h1>
@@ -211,8 +211,13 @@
             </div>
         </section>
         <section class="history-section border-2 border-gray-200 rounded-lg w-1/4 bg-white">
-            
+            <div class="flex justify-between items-center mt-5 mx-4">
+                <h2 class="font-semibold text-xl"><i class="fa-regular fa-clock"></i>Call History</h2>
+                <h3 class="w-[130px] h-[50px] bg-[#00A63E] text-white font-semibold text-xl  text-center p-3 rounded-3xl">2 Clear</h3>
+            </div>
         </section>
     </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
