@@ -9,8 +9,10 @@ document.getElementById("heart-icon-1").addEventListener("click", function(){
     
 })
 
+
 document.getElementById("call-btn-1").addEventListener("click", function(){
     alert("Calling National Emergency Service 999...")
+   
     const historyContainer = document.getElementById("history-container")
     for(const data of historyData){
         const div = document.createElement('div')
@@ -24,6 +26,7 @@ document.getElementById("call-btn-1").addEventListener("click", function(){
                 </div>
         `
         historyContainer.appendChild(div)
+
     }
 
 
@@ -299,3 +302,66 @@ document.getElementById("heart-icon-9").addEventListener("click", function(){
 document.getElementById("clear-btn").addEventListener("click", function(){
     document.getElementById("history-container").innerHTML = "";
 })
+
+
+let num = 2;
+document.getElementById("copy-btn-1").addEventListener("click", function(){
+    const copyCount = document.getElementById("copy-count")
+    num++;
+    copyCount.innerText = num;
+})
+document.getElementById("copy-btn-2").addEventListener("click", function(){
+    const copyCount = document.getElementById("copy-count")
+    num++;
+    copyCount.innerText = num;
+})
+document.getElementById("copy-btn-3").addEventListener("click", function(){
+    const copyCount = document.getElementById("copy-count")
+    num++;
+    copyCount.innerText = num;
+})
+document.getElementById("copy-btn-4").addEventListener("click", function(){
+    const copyCount = document.getElementById("copy-count")
+    num++;
+    copyCount.innerText = num;
+})
+document.getElementById("copy-btn-5").addEventListener("click", function(){
+    const copyCount = document.getElementById("copy-count")
+    num++;
+    copyCount.innerText = num;
+})
+document.getElementById("copy-btn-6").addEventListener("click", function(){
+    const copyCount = document.getElementById("copy-count")
+    num++;
+    copyCount.innerText = num;
+})
+document.getElementById("copy-btn-7").addEventListener("click", function(){
+    const copyCount = document.getElementById("copy-count")
+    num++;
+    copyCount.innerText = num;
+})
+document.getElementById("copy-btn-8").addEventListener("click", function(){
+    const copyCount = document.getElementById("copy-count")
+    num++;
+    copyCount.innerText = num;
+})
+document.getElementById("copy-btn-9").addEventListener("click", function(){
+    const copyCount = document.getElementById("copy-count")
+    num++;
+    copyCount.innerText = num;
+})
+
+
+let savedNum = 100;
+function starNum(){
+    if(savedNum > 0){
+        savedNum = savedNum - 20;
+        if(savedNum < 0){
+            
+            savedNum = 0;
+            alert("You don't have sufficient balance!!")
+        }
+        
+        document.getElementById("star-count").innerText = savedNum;
+    }
+}
